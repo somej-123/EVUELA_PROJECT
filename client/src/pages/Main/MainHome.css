@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "NanumGothic";
+    font-weight: normal;
+    src: url("../../resource/font/Nanum_Gothic/NanumGothic-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-weight: normal;
+    src: url("../../resource/font/Oswald/static/Oswald-Bold.ttf") format("truetype");
+}
+
+*{
+    font-family: 'Oswald', 'NanumGothic';
+}
+
+/* 메인 화면 */
+.backgroundStyle{
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../resource/img/mainBackground.png'); /* 배경 이미지 경로 설정 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* navigation */
+#navSection{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+}
+
+#navigation{
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.naviagtion_item{
+    opacity: 0.7;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.naviagtion_item:hover{
+    opacity: 1;
+}
+
+/* 본문 섹션 */
+#bodySection{
+    display: flex;
+    margin-top: 280px;
+    justify-content: center;
+    width: 50%;
+}
+
+/* 본문 Div */
+#mainTitleDiv{
+    color: #ffffff;
+}
+
+#mainTitleDiv h1{
+    font-size: 5rem;
+}
+
+#mainTitleDiv h5{
+    font-size: 1.25rem;
+}
+
+#mainContentsLine{
+    margin: 20px 0px 15px;
+    width: 100%;
+    border: 2px solid #ffffff;
+}
+
+#mainContentsText{
+    opacity: 0.7;
+    cursor: pointer;
+}
+#mainContentsText:hover{
+    opacity: 1;
+}
+
+
+/* 모바일 화면 */
+@media screen and (max-width: 769px){
+
+    #navSection{
+        justify-content: center;
+    }
+
+    #navigation{
+        width: 100%;
+    }
+
+
+    /* 본문 섹션 */
+    #bodySection{
+        display: flex;
+        margin-top: 150px;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* @media screen and (min-width: 769px) and (max-width: 1024){
+
+} */
