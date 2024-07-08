@@ -38,6 +38,7 @@ const Login = () => {
                     <div className='naviagtion_item'>INFO</div>
                     <div className='naviagtion_item'>BLOG</div>
                     <div className='naviagtion_item'>ETC</div>
+                    <div className='naviagtion_item' onClick={()=>{moveToMenu("login")}}>LOGIN</div>
                 </nav>
             </section>
             {/* 메인 */}

@@ -4,7 +4,7 @@ import LoginForm from './LoginForm'
 import { LoginContext } from '../../contexts/LoginContextProvider'
 import { useNavigate } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
-import './Login.css'
+import LoginCSS from './Login.css'
 
 
 const Login = () => {
@@ -41,7 +41,7 @@ const Login = () => {
                 </nav>
             </section>
             {/* 메인 */}
-            <section id='login_bodySection'>
+            <section id='bodySection'>
               <LoginForm />
             </section>
           

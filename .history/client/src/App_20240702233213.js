@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 // import Home from './pages/Home';
 import Login from './pages/Login/Login';
-import Join from './pages/Join/Join';
+import Join from './pages/Join';
 import User from './pages/User';
 import About from './pages/About';
 import LoginContextProvider from './contexts/LoginContextProvider';

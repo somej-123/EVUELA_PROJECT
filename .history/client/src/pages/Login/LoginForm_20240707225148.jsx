@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
 import { LoginContext } from '../../contexts/LoginContextProvider'
-import { useNavigate } from 'react-router-dom'
+// bootstrap
+import {Form, Button} from 'react-bootstrap';
 
 const LoginForm = () => {
-
-    const navigate = useNavigate();
 
     const { login } = useContext(LoginContext)
 
@@ -35,10 +34,7 @@ const LoginForm = () => {
                 </div>
 
                 <button type='submit' className='btn btn--form btn-login'>
-                    LOGIN                    
-                </button>
-                <button type='button' onClick={()=>{navigate('/join')}} className='btn btn--form btn-login secondBtn'>
-                    SIGN UP                    
+                    Login                    
                 </button>
             </form>
         </div>
