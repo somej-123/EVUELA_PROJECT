@@ -1,0 +1,145 @@
+/* 메인 화면 */
+.backgroundStyle{
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../resource/img/mainBackground.png'); /* 배경 이미지 경로 설정 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* navigation */
+#navSection{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+}
+
+#navigation{
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.naviagtion_item{
+    opacity: 0.7;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.naviagtion_item:hover{
+    opacity: 1;
+}
+
+/* 본문 섹션 */
+#login_bodySection{
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* 모바일 화면 */
+@media screen and (max-width: 769px){
+
+    #navSection{
+        justify-content: center;
+    }
+
+    #navigation{
+        width: 100%;
+    }
+
+
+    /* 본문 섹션 */
+    #bodySection{
+        display: flex;
+        margin-top: 160px;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* 로그인 폼 디자인 */
+
+ .form {
+    width: 400px;
+    margin: auto;
+    padding: 32px 48px;
+    background-color: #00000067;
+    border-radius: 11px;
+    /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15); */
+}
+
+.login-title {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 43px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.login-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 9px;
+    border: none;
+}
+
+.login-form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+.btn--form {
+    margin-top: 10px;
+    background-color: #ffffff00;
+    color: #ffffff;
+    align-self: end;
+    padding: 8px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 9px;
+    border: none;
+
+    cursor: pointer;
+    font-family: inherit;
+
+    transition: all 0.3s;
+}
+
+.btn-login:hover {
+    outline: 1px solid #ffffff;
+}
+
+.btn--form:hover {
+    background-color: #fdf2e900;
+    color: #82f499;
+}
